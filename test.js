@@ -1,4 +1,4 @@
-var CountLength = require('./src/CountLengthTransform.js');
+var CountLength = require('./src/CountWordsTransform.js');
 var fs = require('fs');
 
 var fsStream = fs.createReadStream('1.txt');
