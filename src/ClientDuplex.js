@@ -15,10 +15,6 @@ ClientDuplex.prototype._write = function(chunk, encoding, callback) {
 	if(chunk){
 		this.emit('serverData', chunk.toString());
 	}
-	//this.push(chunk);
-	// var date = new Date(chunk.toString());
- //    if(date.toString() !== 'Invalid Date')
- //    	this.emit('time', date.toString());
     callback();
 };
 
